@@ -9,10 +9,51 @@
 
 /* Main section */
 
+/* Dark Light Mode toggle styling */
+
+
+/* Light theme styles */
+[data-theme="light"] {
+    background-color: white;
+    color: black;
+}
+
+/* Dark theme styles */
+[data-theme="dark"] {
+    background-color: black;
+    color: white;
+}
 
 
 
-
+#fixedmodediv{
+    height: 25px;
+    width: 50px;
+    position: relative;
+    z-index: 10;
+    top: 10px;
+    left: 92%;
+    border-radius: 15px;
+}
+#modediv{
+    height: 25px;
+    width: 47px;
+    /* position: relative; */
+    /* top: 0; */
+    background-color: black;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+#modebut{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 /* Footer section */
@@ -21,4 +62,3 @@
 
 
 
- 
