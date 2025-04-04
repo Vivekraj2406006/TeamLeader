@@ -1,0 +1,64 @@
+
+/* Login page styling */
+
+#contactdiv{
+    background-color: white;
+    height: 80%;
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px black;
+}
+
+#contactform{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#contactform label{
+    font-size: 1.1em;
+    padding-bottom: 5px;
+    padding-top: 6px;
+}
+
+#contactform input{
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+}
+#contactform input:focus{
+    outline: none;
+    border: 2px solid hsl(213, 100%, 50%);
+}
+
+#contactform select{
+    font-size: 1em;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 6px;
+}
+#contactform select:focus{
+    outline: none;
+    border: 1px solid hsl(213, 100%, 50%);
+}
+
+#contactform button{
+    font-size: 1.4em;
+    width: 50%;
+    height: 40px;
+    align-self: center;
+    background-color: hsl(213, 100%, 50%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+#contactform button:hover{
+    background-color: hsl(213, 100%, 40%);
+    cursor: pointer;
+}
+
