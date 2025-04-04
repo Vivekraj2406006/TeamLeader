@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css"/>
+    <title>Login Page</title>
+
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            background-color: hsl(0, 0%, 94%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="contactdiv">
+        <h1 style="color: hsl(213, 100%, 50%);">Contact Us</h1>
+        <form id="contactform" action="" method="POST">
+            <label for="contactname">Name<span style="color:red ;">*</span> </label>
+            <input type="text" id="contactname" required/> <br/>
+
+            <label for="contactemail">Email<span style="color:red ;">*</span> </label>
+            <input type="email" id="contactemail" required/><br/>
+
+            <label for="contactreason">Reason<span style="color:red ;">*</span></label>
+            <select id="contactreason">
+                <option value="Feedback">Feedback</option>
+                <option value="Suggestion">Suggestion</option>
+                <option value="Question">Question</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <br/>
+
+            <input type="text" id="otherpara" placeholder="Please Specify" style="display: none;">
+
+            <label for="contactmessage">Message<span style="color:red ;">*</span> </label>
+            <input type="text" id="contactmessage" required/><br/>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
