@@ -1,10 +1,17 @@
 
 /* Login page styling */
-
+main{
+    height: 90vh;
+            width: 100%;
+            /* background-color: hsl(0, 0%, 94%); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
 #contactdiv{
     background-color: white;
-    height: 80%;
-    width: 70%;
+    height: 90%;
+    width: 50%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -62,3 +69,8 @@
     cursor: pointer;
 }
 
+@media (max-width:600px){
+    #contactdiv {
+        width: 90%;
+    }
+}

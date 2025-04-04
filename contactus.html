@@ -3,50 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contactus.css"/>
     <title>Login Page</title>
 
     <style>
-        body{
+        /* body{
             height: 100vh;
             width: 100%;
             background-color: hsl(0, 0%, 94%);
             display: flex;
             justify-content: center;
             align-items: center;
-        }
+        } */
     </style>
 </head>
 <body>
-    <div id="contactdiv">
-        <h1 style="color: hsl(213, 100%, 50%);">Contact Us</h1>
-        <form id="contactform" action="" method="POST">
-            <label for="contactname">Name<span style="color:red ;">*</span> </label>
-            <input type="text" id="contactname" required/> <br/>
 
-            <label for="contactemail">Email<span style="color:red ;">*</span> </label>
-            <input type="email" id="contactemail" required/><br/>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check"  class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        <label class="logo" ><span><i>CP</i></span></label>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a  class="active" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <label for="contactreason">Reason<span style="color:red ;">*</span></label>
-            <select id="contactreason">
-                <option value="Feedback">Feedback</option>
-                <option value="Suggestion">Suggestion</option>
-                <option value="Question">Question</option>
-                <option value="Other">Other</option>
-            </select>
+    <main>
+        <div id="contactdiv">
+            <h1 style="color: hsl(213, 100%, 50%);">Contact Us</h1>
+            <form id="contactform" action="" method="POST">
+                <label for="contactname">Name<span style="color:red ;">*</span> </label>
+                <input type="text" id="contactname" required/> <br/>
+    
+                <label for="contactemail">Email<span style="color:red ;">*</span> </label>
+                <input type="email" id="contactemail" required/><br/>
+    
+                <label for="contactreason">Reason<span style="color:red ;">*</span></label>
+                <select id="contactreason">
+                    <option value="Feedback">Feedback</option>
+                    <option value="Suggestion">Suggestion</option>
+                    <option value="Question">Question</option>
+                    <option value="Other">Other</option>
+                </select>
+    
+                <br/>
+    
+                <input type="text" id="otherpara" placeholder="Please Specify" style="display: none;">
+    
+                <label for="contactmessage">Message<span style="color:red ;">*</span> </label>
+                <input type="text" id="contactmessage" required/><br/>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
 
-            <br/>
-
-            <input type="text" id="otherpara" placeholder="Please Specify" style="display: none;">
-
-            <label for="contactmessage">Message<span style="color:red ;">*</span> </label>
-            <input type="text" id="contactmessage" required/><br/>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-
-
+    <footer>
+        <div class="foot-panal2">
+            <div class="foot-panal2-c1">
+                <p><b>Get to Know Us</b></p>
+                <a>Facebook</a>
+                <a>Instagram</a>
+                <a>Twitter</a>
+            </div>
+    
+            <div class="foot-panal2-c2">
+                <p><b>Make Money with Us</b></p>
+                <a>Protect and Build Your Brand</a>
+                <a>Help</a>
+                <a href="feedback.html" style="text-decoration: none;">Feedback</a>
+                <a>Careers</a>
+                <a>Press Releases</a>
+            </div>
+            
+        </div>
+       <hr>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Terms & Conditions</a>
+                <a>Privacy Notice</a>
+                <a>Intrest-Based Ads</a>
+            </div>
+            <div class="copyright">
+                © 1996-2025, <i>CP.com</i>, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
