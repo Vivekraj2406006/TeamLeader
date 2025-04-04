@@ -1,4 +1,5 @@
 // Dark mode toggle function
+
 modediv = document.getElementById("modediv");
 modebut = document.getElementById("modebut");
 fixedmodediv = document.getElementById("fixedmodediv");
@@ -93,3 +94,4 @@ document.getElementById('contactreason').addEventListener('change', function() {
         otherPara.style.display = 'none';
     }
 });
+
